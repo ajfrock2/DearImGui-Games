@@ -1,8 +1,9 @@
 #include "Application.h"
 #include "imgui/imgui.h"
 #include "classes/TicTacToe.h"
-#include "classes/Connect4.h"
+#include "classes/ConnectFour.h"
 #include "classes/Chess.h"
+#include "classes/CatchingStrays.h"
 #define TOURNAMENT_IMPLEMENTATION
 #include "classes/Tournament.h"
 
@@ -52,7 +53,11 @@ namespace ClassGame {
                         game->setUpBoard();
                     }
                     if (ImGui::Button("Start Connect 4")) {
-                        game = new Connect4();
+                        game = new ConnectFour();
+                        game->setUpBoard();
+                    }
+                    if(ImGui::Button("Start Catching Strays")) {
+                        game = new CatchingStrays();
                         game->setUpBoard();
                     }
                     if (ImGui::Button("Start Chess")) {
@@ -83,6 +88,7 @@ namespace ClassGame {
                         ImGui::Text("%s", stateString.substr(y*stride,stride).c_str());
                     }
                     ImGui::Text("Current Board State: %s", game->stateString().c_str());
+                    ImGui::Text("Current Score: %d", game->getScore());
                 }
                 ImGui::End();
 

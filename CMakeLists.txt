@@ -61,8 +61,9 @@ add_executable(demo Application.cpp
                           classes/ChessSquare.cpp
                           classes/Grid.cpp
                           classes/TicTacToe.cpp
-                          classes/Connect4.cpp
+                          classes/ConnectFour.cpp
                           classes/Chess.cpp
+                          classes/CatchingStrays.cpp
                           classes/GameState.cpp
                           ${BCKD_FILE}
                           ${MAIN_FILE}
