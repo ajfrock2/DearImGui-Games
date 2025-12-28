@@ -8,29 +8,19 @@ These games were created during a game development class, where the focus was on
 
 A major part of these projects involved designing AI behavior for games. Over time, I experimented with multiple AI strategies and approaches, learning what worked well in practice and what didn’t. Along the way, I also picked up a lot of C++ techniques aimed at optimizing code, which became especially important given the real-time nature of the games.
 
+## GAMES
+
 ### Tic Tac Toe
-
-This was the first game I created in ImGui and served as my introduction to building game AI.
-
-The main focus of this game was understanding terminal states and how they affect decision-making in a game. Working through these concepts gave me a solid foundation for the AI techniques I would use in later games, and helped me understand why clearly defining game-ending conditions is so important when designing AI logic.
+A classic 3x3 grid game where two players take turns. This version includes a basic AI that evaluates terminal states to determine optimal moves.
 
 ### Connect 4
-
-This game built on the ideas introduced in Tic Tac Toe and forced me to learn Negamax due to the increased complexity of the game.
-
-Connect 4 requires much deeper lookahead and more careful evaluation of future moves, which made simpler AI approaches impractical. This game helped me understand how game AI works at its core by evaluating board states and scoring positions based on possible outcomes. Implementing Negamax helped me manage this complexity and marked a clear step forward in the AI techniques I was learning.
+A vertical 7x6 grid game where players drop discs to form a line of four. Includes an AI implementation using the Negamax algorithm for decision-making.
 
 ### Catching Strays
-
-I built this game over a single weekend for a small game jam. Unlike my earlier two-player turn-based projects, this game forced me to dig deeper into my own code to really understand how it worked.  
-
-By doing so, I was able to manipulate the game’s logic to behave differently from a traditional turn-based system. This experience helped me gain confidence in reading and adjusting my code on the fly, and reinforced the importance of structuring code in a way that makes it flexible and adaptable.
+A small experimental game built for a game jam. Features modified turn-based logic with custom rules for puzzle-like gameplay.
 
 ### Chess
-
-Chess was the project where I really mastered my understanding of how game AI works. The complexity of the game required me to apply everything I had learned in earlier games and bring it all together.
-
-This project also pushed me to explore a variety of C++ techniques to optimize my code for performance. Writing efficient data structures, managing memory carefully, and streamlining algorithms became essential to making the AI responsive and effective given the complexity of Chess.
+A full Chess implementation with AI capable of evaluating board states and making strategic moves. Optimized for performance using advanced C++ techniques.
 
 ## HOW TO RUN
 
